@@ -30,7 +30,7 @@ if(!name|| !email|| !password){
   return handleerror("name,email,password is required")
 }
 try {
-  const  url='http://localhost:8080/auth/signup';
+  const  url='http://auth-page-api.vercel.app/auth/signup';
   const response=await fetch(url,{
     method:"POST",
     headers:{
