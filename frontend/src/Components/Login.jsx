@@ -29,8 +29,7 @@ if(!email|| !password){
   return handleerror("email,password is required")
 }
 try {
-  // const  url='http://localhost:8080/auth/login';
-  const url="https://auth-page-lime.vercel.app/auth/login";
+  const  url='http://localhost:8080/auth/login';
   const response=await fetch(url,{
     method:"POST",
     headers:{
