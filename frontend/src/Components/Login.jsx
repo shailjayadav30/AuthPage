@@ -29,7 +29,7 @@ if(!email|| !password){
   return handleerror("email,password is required")
 }
 try {
-  const  url='http://auth-page-api.vercel.app/auth/login';
+  const  url='https://auth-page-api.vercel.app/auth/login';
   const response=await fetch(url,{
     method:"POST",
     headers:{
